@@ -1,4 +1,4 @@
-package com.dgiim.dgiimcraft.item;
+package com.dgiim.dgiimcraft.core.item;
 
 import com.dgiim.dgiimcraft.DgiimCraft;
 import net.minecraft.item.Item;

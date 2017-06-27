@@ -1,8 +1,7 @@
 package com.dgiim.dgiimcraft.tab;
 
-import com.dgiim.dgiimcraft.item.ModItems;
+import com.dgiim.dgiimcraft.core.item.ModItemHandler;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 
 /**
@@ -20,6 +19,6 @@ public class CreativeTabMain extends CreativeTabs {
     // TODO: que sea un mango
     @Override
     public ItemStack getTabIconItem() {
-        return new ItemStack(ModItems.mangoItem);
+        return new ItemStack(ModItemHandler.mangoItem);
     }
 }

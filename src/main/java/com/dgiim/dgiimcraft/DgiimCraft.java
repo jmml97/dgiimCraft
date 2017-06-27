@@ -1,6 +1,5 @@
 package com.dgiim.dgiimcraft;
 
-import com.dgiim.dgiimcraft.item.ModItems;
 import com.dgiim.dgiimcraft.proxy.CommonProxy;
 import com.dgiim.dgiimcraft.tab.CreativeTabMain;
 import net.minecraft.creativetab.CreativeTabs;

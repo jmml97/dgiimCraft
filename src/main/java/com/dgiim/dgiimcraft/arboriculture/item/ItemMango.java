@@ -1,4 +1,6 @@
-package com.dgiim.dgiimcraft.item;
+package com.dgiim.dgiimcraft.arboriculture.item;
+
+import com.dgiim.dgiimcraft.core.item.ItemDgiimFood;
 
 /**
  * Created by jmml on 27/6/17.

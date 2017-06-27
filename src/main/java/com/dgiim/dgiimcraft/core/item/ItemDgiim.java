@@ -1,4 +1,4 @@
-package com.dgiim.dgiimcraft.item;
+package com.dgiim.dgiimcraft.core.item;
 
 import com.dgiim.dgiimcraft.DgiimCraft;
 import net.minecraft.item.Item;
@@ -8,9 +8,9 @@ import net.minecraft.item.Item;
  * Clase base para los items del pack. Añade los items a la pestaña
  * del pack.
  */
-public class DgiimItem extends Item {
+public class ItemDgiim extends Item {
 
-    public DgiimItem(final String itemName) {
+    public ItemDgiim(final String itemName) {
 
         setItemName(this, itemName);
         setCreativeTab(DgiimCraft.tabMain);

@@ -1,6 +1,7 @@
-package com.dgiim.dgiimcraft.item;
+package com.dgiim.dgiimcraft.core.item;
 
 import com.dgiim.dgiimcraft.DgiimCraft;
+import com.dgiim.dgiimcraft.arboriculture.item.ItemMango;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -13,7 +14,7 @@ import net.minecraftforge.registries.IForgeRegistry;
  * En esta clase se recogen todos los items y se registran
  */
 @GameRegistry.ObjectHolder(DgiimCraft.MODID)
-public class ModItems {
+public class ModItemHandler {
 
     public static final Item mangoItem = new ItemMango();
 

@@ -1,6 +1,6 @@
 package com.dgiim.dgiimcraft.client.model;
 
-import com.dgiim.dgiimcraft.item.ModItems;
+import com.dgiim.dgiimcraft.core.item.ModItemHandler;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -24,7 +24,7 @@ public class ModModelManager {
     }
 
     private void registerItemModels() {
-        registerModel(ModItems.mangoItem, 0);
+        registerModel(ModItemHandler.mangoItem, 0);
     }
 
     public static void registerModel(Item item, int metadata) {
