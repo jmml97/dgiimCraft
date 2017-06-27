@@ -1,9 +1,9 @@
 package com.dgiim.dgiimcraft;
 
+import com.dgiim.dgiimcraft.item.ModItems;
 import com.dgiim.dgiimcraft.proxy.CommonProxy;
 import com.dgiim.dgiimcraft.tab.CreativeTabMain;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -24,6 +24,10 @@ public class DgiimCraft {
 
     @SidedProxy(clientSide = "com.dgiim.dgiimcraft.proxy.ClientProxy", serverSide ="com.dgiim.dgiimcraft.proxy.CommonProxy")
     public static CommonProxy proxy;
+
+    public DgiimCraft() {
+        //MinecraftForge.EVENT_BUS.register(new RegisteringHandler());
+    }
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
