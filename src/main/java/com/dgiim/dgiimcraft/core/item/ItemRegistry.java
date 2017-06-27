@@ -14,8 +14,9 @@ import net.minecraftforge.registries.IForgeRegistry;
  * En esta clase se recogen todos los items y se registran
  */
 @GameRegistry.ObjectHolder(DgiimCraft.MODID)
-public class ModItemHandler {
+public class ItemRegistry {
 
+    // Arboriculture
     public static final Item mangoItem = new ItemMango();
 
 
@@ -30,6 +31,5 @@ public class ModItemHandler {
             registry.register(mangoItem);
         }
     }
-
 
 }
