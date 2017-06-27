@@ -21,10 +21,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 public class ModItems {
 
     public static final Item mangoItem = new MangoItem();
-
-//    public static void setItemName(Item item, String name) {
-//        item.setRegistryName(DgiimCraft.MODID, name).setUnlocalizedName(DgiimCraft.MODID + "." + name);
-//    }
+    
 
     @Mod.EventBusSubscriber
     public static class RegistrationHandler {

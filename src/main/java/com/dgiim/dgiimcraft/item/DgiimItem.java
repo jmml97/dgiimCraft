@@ -6,9 +6,9 @@ import net.minecraft.item.Item;
 /**
  * Created by jmml on 27/6/17.
  */
-public class dgiimItem extends Item {
+public class DgiimItem extends Item {
 
-    public dgiimItem(final String itemName) {
+    public DgiimItem(final String itemName) {
 
         setItemName(this, itemName);
         setCreativeTab(DgiimCraft.tabMain);
