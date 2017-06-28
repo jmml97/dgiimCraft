@@ -2,6 +2,12 @@
   "variants": {
     "normal": {
       "model": "dgiimcraft:arboriculture/mango_sapling_block"
+    },
+    "stage=0": {
+      "model": "dgiimcraft:arboriculture/mango_sapling_block"
+    },
+    "stage=1": {
+      "model": "dgiimcraft:arboriculture/mango_sapling_block"
     }
   }
 }
