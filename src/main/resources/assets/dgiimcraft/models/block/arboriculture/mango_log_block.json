@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_column",
+  "textures": {
+    "side": "dgiimcraft:blocks/arboriculture/mango_log_block",
+    "end": "dgiimcraft:blocks/arboriculture/mango_log_block_top"
+  }
+}

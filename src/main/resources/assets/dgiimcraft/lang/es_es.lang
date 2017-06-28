@@ -4,3 +4,4 @@
 itemGroup.dgiimCraft=dgiimCraft
 
 item.dgiimcraft:mango_item.name=Mango
+tile.dgiimcraft:mango_log_block.name=Tronco de mango

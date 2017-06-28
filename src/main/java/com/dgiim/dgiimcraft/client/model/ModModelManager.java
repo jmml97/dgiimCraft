@@ -1,6 +1,8 @@
 package com.dgiim.dgiimcraft.client.model;
 
+import com.dgiim.dgiimcraft.core.block.BlockRegistry;
 import com.dgiim.dgiimcraft.core.item.ItemRegistry;
+import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -20,18 +22,40 @@ public class ModModelManager {
 
     @SubscribeEvent
     public static void registerAllModels(final ModelRegistryEvent event) {
-        INSTANCE.registerItemModels();
+        INSTANCE.registerArboricultureItemModels();
+        INSTANCE.registerArboricultureBlockModels();
+    }
+
+    private void registerArboricultureItemModels() {
+        registerItemModel(ItemRegistry.mangoItem, 0, "arboriculture");
+        registerItemModel(ItemRegistry.mangoLogItemBlock, 0, "arboriculture");
+    }
+
+    private void registerArboricultureBlockModels() {
+        registerBlockModel(BlockRegistry.mangoLogBlock, 0, "arboriculture");
     }
 
     private void registerItemModels() {
-        registerModel(ItemRegistry.mangoItem, 0);
+
     }
 
-    public static void registerModel(Item item, int metadata) {
+    public static void registerItemModel(Item item, int metadata, String location) {
 
-        String resourceName = item.getUnlocalizedName().substring(5).replace('.', ':');
+        String resourceName = item.getUnlocalizedName().substring(5).replace(":", ":" + location + "/");
+        System.out.println(item.getUnlocalizedName());
+        System.out.println(resourceName);
 
         ModelResourceLocation itemModelResourceLocation = new ModelResourceLocation(resourceName, "inventory");
-        ModelLoader.setCustomModelResourceLocation(item, 0, itemModelResourceLocation);
+        ModelLoader.setCustomModelResourceLocation(item, metadata, itemModelResourceLocation);
+    }
+
+    public static void registerBlockModel(Block block, int metadata, String location) {
+
+        String resourceName = block.getUnlocalizedName().substring(5).replace(":", ":" + location + "/");
+
+        ModelResourceLocation itemModelResourceLocation = new ModelResourceLocation(resourceName, "inventory");
+        //ModelLoader.setCustomModelResourceLocation(block, metadata, itemModelResourceLocation);
+
+
     }
 }

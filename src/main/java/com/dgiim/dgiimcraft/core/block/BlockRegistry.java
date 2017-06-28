@@ -1,8 +1,7 @@
 package com.dgiim.dgiimcraft.core.block;
 
 import com.dgiim.dgiimcraft.DgiimCraft;
-import com.dgiim.dgiimcraft.arboriculture.block.BlockTest;
-import com.dgiim.dgiimcraft.arboriculture.item.ItemBlockTest;
+import com.dgiim.dgiimcraft.arboriculture.block.BlockMangoLog;
 import net.minecraft.block.Block;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -17,7 +16,7 @@ import net.minecraftforge.registries.IForgeRegistry;
 public class BlockRegistry {
 
     // Arboriculture
-    public static final Block testBlock = new BlockTest();
+    public static final Block mangoLogBlock = new BlockMangoLog();
 
 
     // Clase que se encarga de registrar los bloques
@@ -28,7 +27,7 @@ public class BlockRegistry {
         public static void registerBlocks(final RegistryEvent.Register<Block> event) {
             final IForgeRegistry<Block> registry = event.getRegistry();
 
-            registry.register(testBlock);
+            registry.register(mangoLogBlock);
         }
     }
 }

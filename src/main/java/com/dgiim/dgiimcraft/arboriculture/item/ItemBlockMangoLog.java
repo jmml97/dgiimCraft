@@ -6,9 +6,12 @@ import net.minecraft.block.Block;
 /**
  * Created by jmml on 27/6/17.
  */
-public class ItemBlockTest extends ItemBlockDgiim {
+public class ItemBlockMangoLog extends ItemBlockDgiim {
 
-    public ItemBlockTest(Block block) {
+    public static final String NAME = "mango_log_item";
+
+    public ItemBlockMangoLog(Block block) {
         super(block);
+        setItemName(this, NAME);
     }
 }
