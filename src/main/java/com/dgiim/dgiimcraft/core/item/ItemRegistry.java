@@ -2,6 +2,7 @@ package com.dgiim.dgiimcraft.core.item;
 
 import com.dgiim.dgiimcraft.DgiimCraft;
 import com.dgiim.dgiimcraft.arboriculture.item.ItemBlockMangoLog;
+import com.dgiim.dgiimcraft.arboriculture.item.ItemBlockMangoSapling;
 import com.dgiim.dgiimcraft.arboriculture.item.ItemMango;
 import com.dgiim.dgiimcraft.core.block.BlockRegistry;
 import net.minecraft.item.Item;
@@ -25,6 +26,7 @@ public class ItemRegistry {
 
     // ItemBlocks
     public static final Item mangoLogItemBlock = new ItemBlockMangoLog(BlockRegistry.mangoLogBlock);
+    public static final Item mangoSaplingItemBlock = new ItemBlockMangoSapling(BlockRegistry.mangoSaplingBlock);
 
 
     // Clase que se encarga de registrar los items
@@ -37,6 +39,7 @@ public class ItemRegistry {
 
             registry.register(mangoItem);
             registry.register(mangoLogItemBlock);
+            registry.register(mangoSaplingItemBlock);
         }
     }
 

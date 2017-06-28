@@ -23,39 +23,23 @@ public class ModModelManager {
     @SubscribeEvent
     public static void registerAllModels(final ModelRegistryEvent event) {
         INSTANCE.registerArboricultureItemModels();
-        INSTANCE.registerArboricultureBlockModels();
     }
 
     private void registerArboricultureItemModels() {
         registerItemModel(ItemRegistry.mangoItem, 0, "arboriculture");
         registerItemModel(ItemRegistry.mangoLogItemBlock, 0, "arboriculture");
+        registerItemModel(ItemRegistry.mangoSaplingItemBlock, 0, "arboriculture");
     }
 
-    private void registerArboricultureBlockModels() {
-        registerBlockModel(BlockRegistry.mangoLogBlock, 0, "arboriculture");
-    }
-
-    private void registerItemModels() {
-
-    }
 
     public static void registerItemModel(Item item, int metadata, String location) {
 
         String resourceName = item.getUnlocalizedName().substring(5).replace(":", ":" + location + "/");
-        System.out.println(item.getUnlocalizedName());
-        System.out.println(resourceName);
+        //System.out.println(item.getUnlocalizedName());
+        //System.out.println(resourceName);
 
         ModelResourceLocation itemModelResourceLocation = new ModelResourceLocation(resourceName, "inventory");
         ModelLoader.setCustomModelResourceLocation(item, metadata, itemModelResourceLocation);
     }
 
-    public static void registerBlockModel(Block block, int metadata, String location) {
-
-        String resourceName = block.getUnlocalizedName().substring(5).replace(":", ":" + location + "/");
-
-        ModelResourceLocation itemModelResourceLocation = new ModelResourceLocation(resourceName, "inventory");
-        //ModelLoader.setCustomModelResourceLocation(block, metadata, itemModelResourceLocation);
-
-
-    }
 }

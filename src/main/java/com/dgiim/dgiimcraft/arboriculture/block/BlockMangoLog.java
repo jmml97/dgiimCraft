@@ -11,7 +11,7 @@ public class BlockMangoLog extends BlockDgiim {
     public static final String NAME = "mango_log_block";
 
     public BlockMangoLog() {
-        super(Material.ROCK, NAME);
+        super(Material.WOOD, NAME);
 
         setResistance(5.0F);
         setHardness(3.0F);
