@@ -1,13 +1,17 @@
 package com.dgiim.dgiimcraft.arboriculture.block;
 
 import com.dgiim.dgiimcraft.DgiimCraft;
+import com.dgiim.dgiimcraft.arboriculture.states.StateMapperArboriculture;
 import com.dgiim.dgiimcraft.world.WorldGenMangoTree;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockSapling;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.client.renderer.block.statemap.StateMapperBase;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.minecraft.world.gen.feature.WorldGenerator;
+import net.minecraftforge.fml.relauncher.Side;
+import net.minecraftforge.fml.relauncher.SideOnly;
 
 import java.util.Random;
 
@@ -25,6 +29,11 @@ public class BlockMangoSapling extends BlockSapling {
         this.setUnlocalizedName(this.getRegistryName().toString());
         this.setCreativeTab(DgiimCraft.tabMain);
 
+    }
+
+    @SideOnly(Side.CLIENT)
+    public StateMapperBase getStateMapper() {
+        return new StateMapperArboriculture();
     }
 
     @Override

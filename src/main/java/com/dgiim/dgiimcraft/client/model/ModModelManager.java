@@ -23,12 +23,19 @@ public class ModModelManager {
     @SubscribeEvent
     public static void registerAllModels(final ModelRegistryEvent event) {
         INSTANCE.registerArboricultureItemModels();
+        INSTANCE.registerArboricultureBlockStates();
     }
 
     private void registerArboricultureItemModels() {
         registerItemModel(ItemRegistry.mangoItem, 0, "arboriculture");
         registerItemModel(ItemRegistry.mangoLogItemBlock, 0, "arboriculture");
         registerItemModel(ItemRegistry.mangoSaplingItemBlock, 0, "arboriculture");
+
+    }
+
+    private void registerArboricultureBlockStates() {
+        ModelLoader.setCustomStateMapper(BlockRegistry.mangoLogBlock, BlockRegistry.mangoLogBlock.getStateMapper());
+        ModelLoader.setCustomStateMapper(BlockRegistry.mangoSaplingBlock, BlockRegistry.mangoSaplingBlock.getStateMapper());
     }
 
 

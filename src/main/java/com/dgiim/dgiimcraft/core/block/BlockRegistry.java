@@ -17,8 +17,8 @@ import net.minecraftforge.registries.IForgeRegistry;
 public class BlockRegistry {
 
     // Arboriculture
-    public static final Block mangoLogBlock = new BlockMangoLog();
-    public static final Block mangoSaplingBlock = new BlockMangoSapling();
+    public static final BlockMangoLog mangoLogBlock = new BlockMangoLog();
+    public static final BlockMangoSapling mangoSaplingBlock = new BlockMangoSapling();
 
 
     // Clase que se encarga de registrar los bloques
@@ -31,6 +31,7 @@ public class BlockRegistry {
 
             registry.register(mangoLogBlock);
             registry.register(mangoSaplingBlock);
+
         }
     }
 }
