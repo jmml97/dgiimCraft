@@ -22,7 +22,12 @@ public class WorldGenMangoTree extends WorldGenAbstractTree {
     }
 
     public boolean generate(World worldIn, Random rand, BlockPos position) {
-        this.setBlockToLog(worldIn, position);
+
+        int i = rand.nextInt(3) + rand.nextInt(3) + 5;
+        if (position.getY() >= 1 && position.getY() + i + 1 <= 256) {
+            this.setBlockToLog(worldIn, position);
+        }
+
         return false;
     }
 
